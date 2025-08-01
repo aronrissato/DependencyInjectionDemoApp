@@ -1,11 +1,11 @@
 ﻿namespace DependencyInjectionDemo.Logic;
 
-public class DemoLogic : IDemoLogic
+public class BetterDemoLogic : IDemoLogic
 {
-    public DemoLogic()
+    public BetterDemoLogic()
     {
-        Value1 = Random.Shared.Next(1, 1001);
-        Value2 = Random.Shared.Next(1, 1001);
+        Value1 = 25;
+        Value2 = 50;
     }
     
     public int Value1 { get; private set; }
