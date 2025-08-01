@@ -1,0 +1,7 @@
+﻿services:
+  dependencyinjectiondemo:
+    image: dependencyinjectiondemo
+    build:
+      context: .
+      dockerfile: DependencyInjectionDemo/Dockerfile
+
