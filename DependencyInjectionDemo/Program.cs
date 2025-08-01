@@ -6,7 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddTransient<IDemoLogic, DemoLogic>();
-builder.Services.AddTransient<IDemoLogic, BetterDemoLogic>();
 
 builder.Host.UseSerilog((context, config) =>
 {
