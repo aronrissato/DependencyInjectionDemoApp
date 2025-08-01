@@ -1,7 +1,10 @@
+using DependencyInjectionDemo.Logic;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddTransient<DemoLogic>();
 
 var app = builder.Build();
 
