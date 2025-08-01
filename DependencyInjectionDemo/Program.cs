@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddTransient<IDemoLogic, BetterDemoLogic>();
+builder.Services.AddTransient<IDemoLogic, DemoLogic>();
 
 var app = builder.Build();
 

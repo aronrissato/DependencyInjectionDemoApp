@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using DependencyInjectionDemo.Logic
 @inject IDemoLogic Logic;
+@inject ILogger<Index> Logger;
 
 <PageTitle>Index</PageTitle>
 
@@ -20,6 +21,9 @@
     protected override void OnInitialized()
     {
         // logic = new();
+        Logger.LogInformation("Displaying values of {value1} and {value2}",
+            Logic.Value1,
+            Logic.Value2);
     }
 
 }
